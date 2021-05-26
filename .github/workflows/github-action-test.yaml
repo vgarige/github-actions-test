@@ -1,0 +1,13 @@
+name: Shell Commands
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Os Version
+        run: cat /etc/os-release
+      - name: Multiple Commands
+        run: |
+          uanme -r
+          hostname        
